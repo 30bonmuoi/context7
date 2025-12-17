@@ -1,0 +1,44 @@
+curl -X GET "https://context7.com/api/v2/search?query=next.js" \
+  -H "Authorization: Bearer CONTEXT7_API_KEY"
+  {
+  "mcpServers": {
+    "context7": {
+      "url": "https://mcp.context7.com/mcp",
+      "headers": {
+        "CONTEXT7_API_KEY": "YOUR_API_KEY"
+      }
+    }
+  }
+}{
+  "results": [
+    {
+      "id": "/websites/nextjs",
+      "title": "Next.js",
+      "description": "Next.js is a React framework for building full-stack web...",
+      "branch": "main",
+      "lastUpdateDate": "2025-11-15T17:00:29.666Z",
+      "state": "finalized",
+      "totalTokens": 1526838,
+      "totalSnippets": 7382,
+      "stars": -1,
+      "trustScore": 7.5,
+      "benchmarkScore": 86.3,
+      "versions": []
+    },
+    {
+      "id": "/vercel/next.js",
+      "title": "Next.js",
+      "description": "Next.js enables you to create full-stack web...",
+      "branch": "canary",
+      "lastUpdateDate": "2025-11-17T22:20:15.784Z",
+      "state": "finalized",
+      "totalTokens": 824953,
+      "totalSnippets": 3336,
+      "stars": 131745,
+      "trustScore": 10,
+      "benchmarkScore": 91.1,
+      "versions": ["v14.3.0-canary.87", "v13.5.11", "v15.1.8"]
+    },
+    ...
+  ]
+}
